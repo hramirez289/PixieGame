@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+          
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3 bg-white  ">
+              <h1>¡REGISTRATE!</h1>
+              <form id="registroForm">
+                <div class="mb-3">
+                    <label for="NombreCompleto" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="NombreCompleto" placeholder="Ej: Juan Esteban Perez Rojas" autofocus required>
+                </div>
+                <div class="mb-3">
+                    <label for="NombreUsuario" class="form-label">Crear nombre de usuario</label>
+                    <input type="text" class="form-control" id="NombreUsuario" placeholder="Ej: Juan_Perez" required>
+                </div>
+                <div class="mb-3">
+                    <label for="CorreoElectronico" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="CorreoElectronico" placeholder="Ej: Juan_perez@gmail.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ClaveAcceso" class="form-label">Crea una clave para acceso</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="ClaveAcceso" placeholder="*********" required>
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('ClaveAcceso')">Mostrar</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="RepiteClave" class="form-label">Repite la clave por favor</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="RepiteClave" placeholder="*********" required>
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('RepiteClave')">Mostrar</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="FechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="FechaNacimiento" required>
+                </div>
+                <div class="mb-3">
+                    <label for="DireccionDespacho" class="form-label">Dirección de despacho (opcional)</label>
+                    <input type="text" class="form-control" id="DireccionDespacho" placeholder="Ingrese dirección de despacho">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-secondary">Guardar</button>
+                    <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 text-white" style="background-color: rgba(27, 23, 23, 0.7);">
+              <div style="border: 2px solid black; padding: 20px;">
+              <h1 style="color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">¡REGISTRATE PARA PODER OBTENER MULTIPLES BENEFICIOS!</h1>            
+              <h3 style="color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">- Codigos de descuento</h3>
+              <h3 style="color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">- ¡Primera compra con envío gratis si te registras!</h3>
+              <h3 style="color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">- Te avisamos cuando hayan nuevos estrenos</h3>
+              <h3 style="color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">- ¡Todo eso y mucho mas! </h3>
+              <div class="d-flex justify-content-end">
+              <img src="/Actividad_formativa_S1-main/imagenes/Diseño sin título (7).png" class="img-fluid" alt="...">
+             </div>
+  
+             </div>
+            </div>
+           
+      
+  
+        </div>       
+      </div> 
+    
+</body>
+</html>

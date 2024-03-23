@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../imagenes/fondoo.jpg);
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-block-end: 35px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;  
+}
+
+.logo-barra{
+  height: 100px ;
+  
+}
+
+.bg-white {
+  background-color: lightgray;
+}
+
+h1{
+  color: rgb(253, 253, 253);
+  font-size: 45px;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+a{
+  color:white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:hover{
+  color:brown;
+}
+
+
+section{
+  justify-content: center;
+  display: flex;
+  width: 1520px;
+  height: 430px;
+  margin: 0 auto;
+}
+
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover{
+  width: 500px;
+  height: 440px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: calc(2/3 * 100%);
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.form-container {
+  background-color: #e2dede;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: rgb(9, 8, 8);
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #060809;
+}
+
+.btn-secondary:hover {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/*.card-img-top{
+  width: 200px;
+  height: 250px; 
+  border: 1px solid #fff;
+  margin: 0 auto 10px;
+}
